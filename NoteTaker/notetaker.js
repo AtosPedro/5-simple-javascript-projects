@@ -1,20 +1,30 @@
 var textareaInput = document.getElementById('note-input');
-
-var tableDisplay = document.getElementById('data-grid');
-
-var nameInput = document.getElementById('name-input');
+var modal = document.getElementById('modal');
+var dataDisplay = document.getElementById('notas');
 
 function submit(){
     let note = textareaInput.value;
-    let name = nameInput.value;
 
     if(note != ""){
 
-        tableDisplay.innerHTML += `<tr><td>${name}</td><td>${note}</td> <td><button id="details-button" onclick="viewMore()">Ver Mais</button></td></tr>`;
+        dataDisplay.innerHTML += `<div><p>${note}</p>  <button id="details-button" onclick="viewMore(this.parentNode)">Ver Mais</button> </div>`
+    }else{
+        alert("campo vazio");
     }
 }
 
-function viewMore(){
-    let modal = document.getElementById('modal p');
+function viewMore(line){
+    let textNote = line.firstChild;
+    modal.style.display = 'block';
+    modal.innerHTML = `<div><p>${textNote.innerHTML}</p><button id="close-button" onclick="closeModal()"> X </button></div>`;
     
 }
+
+function closeModal(){
+    modal.style.display = 'none';
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
