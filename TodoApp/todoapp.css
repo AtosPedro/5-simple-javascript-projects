@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#main-box h1, h2{
+    margin: 1rem;
+}
+#main-box button{
+    width: 7rem;
+    align-self: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: green;
+    border: none;
+    border-radius: 2rem;
+    color: white;
+}
+#user-input{
+    height: 2rem;
+    border: 1px solid green;
+    border-radius: 2rem;
+    width: 40rem;
+    text-align: center;
+}
+#list-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#list-container ul{
+    list-style: none;
+    
+}
+#list-container ul li{
+    margin: 1rem;
+}
+#list-container ul li button{
+    padding: 0.3rem;
+    margin-left: 0.3rem;
+    width: 2.5rem;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    
+}
+

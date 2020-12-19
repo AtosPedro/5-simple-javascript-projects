@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="expenseapp.css">
+
+    <title>Expense app</title>
+</head>
+<body>
+    <h1>Tracker de Dispesas</h1>
+    <div id="input-box">
+        
+        <input type="text" name="text-input" id="name-input">
+        <input type="date" name="date-input" id="date-input">
+        <input type="number" name="price-input" id="price-input">
+        <button id="submit-button" type="submit" onclick="submit()">Adicionar Dispesa</button>
+    </div>
+    
+
+
+    <div id="table-box">
+        <table id="table-display">
+            <tr>
+                <td> <strong>Nome</strong></td>
+                <td><strong>Data</strong></td>
+                <td><strong>Preço</strong></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="expensapp.js"></script>
+</body>
+</html>

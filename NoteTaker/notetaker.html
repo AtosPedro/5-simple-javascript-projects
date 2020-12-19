@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taker</title>
+</head>
+<body>
+    <h1>Note Taker</h1>
+
+    <textarea name="nota" id="note-input" cols="50" rows="10" maxlength="500" placeholder="Insira sua nota aqui"></textarea>
+    <input type="text" name="nome" id="name-input">
+
+    <button id="submit-button" onclick="submit()">Adcionar Nota</button>
+
+    <table id="data-grid">
+        <tr>
+            <td>Nome</td>
+            <td>Nota</td>
+        </tr>
+    </table>
+
+    <div id="modal">
+        <p>
+            
+        </p>
+    </div>
+    <script src="/NoteTaker/notetaker.js"></script>
+</body>
+</html>
