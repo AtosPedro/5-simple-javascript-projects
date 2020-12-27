@@ -29,6 +29,11 @@ h1{
     height: 3rem;
     border: none;
     border-radius: 2rem;
+    transition: 200ms;
+}
+#submit-button:hover{
+    background-color: rgb(2, 100, 2);
+    width: 11rem;
 }
 #table-box{
     display: flex;
@@ -38,6 +43,7 @@ h1{
     
     width: 70rem;
     margin: 2rem;
+    
 }
 #table-box table tr{
     
@@ -53,5 +59,9 @@ h1{
     color: white;
     border: none;
     border-radius: 2rem;
-
+    transition: 200ms;
+}
+#table-box table tr td button:hover{
+    background-color: rgb(2, 100, 2);
+    width: 4rem;
 }

@@ -37,6 +37,11 @@
     border: none;
     border-radius: 2rem;
 
+    transition: 200ms;
+}
+#principal button:hover{
+    background-color: rgb(2, 100, 2);
+    width: 8rem;
 }
 
 #notas{
@@ -70,6 +75,12 @@
     color: white;
     border: none;
     border-radius: 2rem;
+
+    transition: 200ms;
+}
+#notas div button:hover{
+    background-color: rgb(2, 100, 2);
+    
 }
 
 #modal{
@@ -106,4 +117,10 @@
     width: 5rem;
     font-size: 16px;
     font-weight: bold;
+
+    transition: 200ms;
+}
+#close-button:hover{
+    background-color: rgb(2, 100, 2);
+    width: 6rem;
 }
